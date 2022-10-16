@@ -1,0 +1,66 @@
+.banner{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.banner .container{
+    max-width: 100%;
+    width: 80%;
+    max-height: 400px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #98ca9d;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner .container .imgBx{
+    height: 100%;
+    float: left;
+}
+.banner .container .imgBx img{
+    height: 100%;
+}
+
+.banner .container .descriptive{
+    max-width: 400px;
+    width: 97%;
+    max-height: 400px;
+    height: auto;
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    text-align: center;
+    
+}
+
+@media only screen and (max-width: 650px){
+    .banner .container{
+        width: 100%;
+        border-radius: 0;
+        height: 300px;
+    }
+    .banner .container .descriptive{
+        height: 200px;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-60%);
+    }
+}
+.banner .container .descriptive .btn{
+    color: white;
+    background-image: linear-gradient(to right top, #176b2b, #327c3e, #488d52, #5e9f66, #73b17a);    
+    padding: 5px 30px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+.banner .container .descriptive .btn:hover{
+    transform: scale(1.02);
+    box-shadow: #176b2b  0px 1px 6px 0px;
+}

@@ -1,0 +1,62 @@
+.about{
+    padding: 50px 20px 180px 20px;
+    display: block;
+}
+
+.about .container{
+    max-width: 80%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.about .container h1{
+    font-size: 1.5rem;
+    
+}
+
+.about .container p{
+    color: rgb(67, 67, 67);
+    font-size: 1rem;
+}
+
+.lineUp {
+    animation: 2s anim-lineUp ease-out;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  .lineRight {
+    animation: 2s anim-lineRight ease-out;
+  }
+  @keyframes anim-lineRight {
+    0% {
+      opacity: 0;
+      transform: translateX(-20%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }

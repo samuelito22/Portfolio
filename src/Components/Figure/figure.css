@@ -1,0 +1,88 @@
+.skeleton {
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+
+@keyframes skeleton-loading{
+    0%{
+        background-color: hsl(200, 20%, 92%);
+    }
+    100%{
+        background-color: hsl(200, 20%, 97%);
+    }
+}
+
+.figure{
+    position: relative;
+    max-width: 400px;
+    text-align: center;
+    margin: 0px 10px 10px 10px;
+    display: flex;
+    justify-content: center;   
+}
+
+.figure .container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 20%;
+    border-radius: 22px;
+    transition: width 0.5s, height 0.5s;
+    cursor: pointer;
+}
+.figure .container .imgBx{
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.7s ease-in-out;
+    border-radius: 12px;
+
+}
+.figure .container:hover #overlayFigure{
+    visibility: visible;
+}
+.btn-visit{
+    color: #73b17a;
+    background-color: white;    
+    padding: 5px 30px;
+    border-bottom-right-radius:12px ;
+    border-bottom-left-radius:12px ;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 50px;
+
+    font-weight: bold;
+    font-family: 'Nunito';
+    box-shadow: #176b2b  0px 1px 6px 0px;
+}
+
+#overlayFigure {
+    visibility: hidden;
+    border-radius: 12px;
+    position: absolute; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+     /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(39, 39, 39, 0.5); /* Black background with opacity */
+    z-index: 0; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    content: '';
+  }
+.figure .container:hover .imgBx{
+    transform: scale(1.03);
+
+}
+.figure .container .imgBx img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 15px;
+}
+.figure .container:hover img{
+    box-shadow: #73b17a 0px 2px 15px;
+}

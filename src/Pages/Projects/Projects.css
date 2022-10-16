@@ -1,0 +1,17 @@
+.btn-filter{
+    color: white;
+    background-color: #73b17a;    
+    padding: 5px 30px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 50px;
+    margin-left: auto;
+    transform: translateY(1px);
+    font-size: 0.9rem;
+}
+.btn-filter:hover{
+    transform: scale(1.02);
+    box-shadow: #176b2b  0px 1px 6px 0px;
+}
+

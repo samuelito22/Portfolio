@@ -1,0 +1,58 @@
+.contact{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    max-width: 500px;
+    max-height: 400px;
+    height: 90%;
+    width: 90%;
+    
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 29px 0px;    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.contact .inputField{
+    height: 30px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: rgba(100, 100, 111, 0.2) 0.2px solid;
+    font-family: 'Assistant';
+}
+
+.contact .inputName{
+    font-family: 'Assistant';
+    font-weight: bold;
+    margin: 2px 5px;
+    padding-top: 10px;
+    
+}
+
+.contact .btn{
+    color: white;
+    background-image: linear-gradient(to right top, #176b2b, #327c3e, #488d52, #5e9f66, #73b17a);    
+    padding: 5px 30px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: transparent;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    margin: 20px 0;
+    font-family: 'Assistant';
+    font-weight: bold;
+    font-size: 1rem;
+}
+.contact .btn:hover{
+    transform: scale(1.02);
+    box-shadow: #176b2b  0px 1px 6px 0px;
+}
+

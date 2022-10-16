@@ -1,0 +1,76 @@
+.card{
+    width: 200px;
+    height: 200px;
+    margin: 0px 10px 10px 10px;
+}
+.card .container{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 12px;
+    transition: 0.5s;
+    overflow: hidden;
+    position: relative;
+}
+
+@media only screen and (min-width: 443px) {
+    .card .container:hover{
+        height: 250px;
+    }
+}
+.card .container .imgBx{
+    width: 200px;
+    height: 200px;
+    color: #73b17a;
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width: 448px) {
+    .card .container .imgBx{
+        width: 100px;
+        height: 100px;
+    }
+    .card{
+        width: 100px;
+        height: 100px;
+        margin: 0px 10px 10px 10px;
+    }
+}
+
+.card .container .imgBx .img{
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.card .container .btn{
+    color: white;
+    background-image: linear-gradient(to right top, #176b2b, #327c3e, #488d52, #5e9f66, #73b17a);    
+    padding: 5px 30px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 50px;
+    display: flex;
+    justify-content: center ;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+.card .container .btn:hover{
+    transform: scale(1.02);
+    box-shadow: #176b2b  0px 1px 6px 0px;
+}
+
+#more{
+    color: rgb(86, 86, 86);
+    margin-left: auto;
+    transform: translateY(1px);
+    font-size: 0.9rem;
+    transition: 0.4s;
+}
+#more:hover{
+    color: black;
+}
